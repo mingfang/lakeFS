@@ -1,8 +1,10 @@
-## Preliminary Research Results
+## OIDC support in lakeFS
 
-As suggested by @arielshaqed, we started researching the option to implement OIDC support as part of the lakeFS open source project. Note that the following discussion is related only to the open source project.
+As suggested by @arielshaqed, we started researching the option to implement OIDC support as part of lakeFS.
 
 In such a solution, the person who configures lakeFS will supply the parameters required for implementing OIDC, including the provider's domain, the client ID and secret, and a callback URL. Once activated, the standard (non-OIDC) cookie based lakeFS authentication will not be available. API access will still use credentials managed internally like today.
+
+As a first step, authorization will still be managed internally by lakeFS.
 
 ### Open questions
 
